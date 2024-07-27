@@ -1,8 +1,11 @@
-x = int(input("Enter the value of x: "))
-y = int(input("Enter the value of y: "))
+# Importing the string_operations module
+import string_operations as so
 
-import lambda_calculator
-print(f"X+Y = {lambda_calculator.add(x, y)}")
-print(f"X-Y = {lambda_calculator.subtract(x, y)}")
-print(f"X*Y = {lambda_calculator.multiply(x, y)}")
-print(f"X/Y = {lambda_calculator.divide(x, y)}")
+# Sample strings and printing results
+sample_string = "hello World"
+
+print("Original:", sample_string)
+print("Reversed:", so.reverse_string(sample_string))
+print("Capitalized:", so.capitalize_string(sample_string))
+print("Lowercase:", so.lowercase_string(sample_string))
+print("Uppercase:", so.uppercase_string(sample_string))
