@@ -1,5 +1,11 @@
-grades = [55, 70, 65, 40, 90, 85, 50, 77]
+children = [
+    {"name": "Alice","age" : 2, "height" : 95},
+    {"name": "Bob","age" : 4, "height" : 105},
+    {"name": "Charlie","age" : 3, "height" : 110},
+    {"name": "David","age" : 5, "height" : 102},
+    {"name": "Eve","age" : 6, "height" : 99}
+]
 
-passed_with_bonus = [round(grade * 1.05, 2) for grade in grades if grade >= 60]
+eligible_children = [child for child in children if child['age'] > 3 and child['height'] > 100]
 
-print("Grades after filtering and applying bonus:", passed_with_bonus)
+print("Eligible children for the fun park:", eligible_children)
